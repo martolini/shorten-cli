@@ -1,16 +1,14 @@
 language: node_js
 node_js:
-- '9'
+  - '9'
 deploy:
-  provider: npm
-  email: msroed@gmail.com
+  script: 'cp .npmrc.template $HOME/.npmrc && npm publish'
+  provider: script
   on:
     tags: true
-  api_key:
-    secure: V4okpX6UPIvEyqM+7pvSm6HslQQk9Ipt5hX7gH7FCh5gHNicaH96lCYfCO8CoYlJXfdxSFYX0u3tbjMVmtroodlmJyL/iM8FJYne7HEXjmSVHA7eXf/fngNcMN9VbUormefwUV3XqXPubW6wahDat0Hg5o03qk+m7YZaw2hH3EoKZJYXrLo+D50ZnwRqBCIge14GVpr6DwVO3Ss15IbVDRcGcaLdqXw8mCXVecCar5HUWgsceiU8yaDkULRoww5v+t6pQfi676XzKbBxWokdybBQcLlFvAECYYqpTtMlRwKE8UW6KVN6YcVxj8hnUvRyev2J09N6fCeHz76U3x5unssA9zJ2BtuC5S4kiOJ5PyIO2dPlyYQNCyTXcm1ynC4HPmGEI7iHFkRCKN0K14Ht0N7PSkozxA13qaV52pM1VPCOAD/TZNwl2tP8HWrPTFHga463FE+L7wiJQ05XcX24FBVnVtipr2nI5Qhqes6tSnyoUBVBY6IRNF0D50AWEYq1CG/ZuXN6uNz0rseK0ef3T0RNnjA2AwiEAGA3LtPpluEp9ePKOw+2WvnESjCwT4eOMXOa+dAmrJLeahCXgJ3vcjFEy8BbBTNahN3FJR5ZW2P7O803GDdl3r3qpdig/1sSe8YyokWZdT1IfQHOJaCNl8kVHhvWnY/T+pCNE6KB8+4=
 notifications:
   email:
     recipients:
-    - msroed@gmail.com
+      - msroed@gmail.com
     on_success: change
     on_failure: always
