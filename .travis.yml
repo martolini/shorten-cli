@@ -1,16 +1,16 @@
 language: node_js
 node_js:
-  - '9'
+- '9'
 deploy:
   provider: npm
   email: msroed@gmail.com
-  api_key:
-    secure: IuAjeqljPvz+4+/kaDYOS6dx3RrSqMVHCthrV+7j/n0gNKPAcbjiGhuYSK99zq/wIzwJlpDRxWxoJ316lpIabIp91S258x4xxhpLGzBryTTNY93NsWoFvcYRXpEpxdezJRxzJMT9a2rffalKrWqCGcObRVoDE6v+BV1vjIwFh009BqFKAJFnGCy2z16PZ2lz5tNTWk7rp42G3TkGIpcZfnFLbVLDJr0UPcy0i1UfvPpDMr24MnbvL4zUa2pKnbUImz2+1ZwWCTUVAcq01U7tH/BaH1EOOWlEIIQSsbwnjE7PBSxHCfo9IS5W+Ga5oo2omRftcgdW7jWlIrT9vftzQe1K17vikx+wiPTbtAv7er6Z8gotBZrneJKoTqKGW/IFnZ+eqVvi1Nl45kcbXtRNd8pHS6Dd41RkxlpfmZC6GpsOy6Q15EGXCIxGS1tw1hS8TrKPFoR4rE8txdqicZy4Os71E1o6TiRKjLS7+ZxhDnY+0Ar1O4Pw3SMYHQ/04r2AvNWkwR/Ae926611EO19JFOJoa1qnQ+BWhabIs28sQQfx7KMsp/fzeO2Jwqam6kPOdl0BSdtXYCzv6xd40rZUkwKJehAIy4okMPUBDd3L61aS2XG9LJSw8Hc/h09b3QM1zXGCfXfANhg2y6Uug5iaBAMWJJ6gmCNgfYBC9Gvf0JY=
   on:
     tags: true
+  api_key:
+    secure: V4okpX6UPIvEyqM+7pvSm6HslQQk9Ipt5hX7gH7FCh5gHNicaH96lCYfCO8CoYlJXfdxSFYX0u3tbjMVmtroodlmJyL/iM8FJYne7HEXjmSVHA7eXf/fngNcMN9VbUormefwUV3XqXPubW6wahDat0Hg5o03qk+m7YZaw2hH3EoKZJYXrLo+D50ZnwRqBCIge14GVpr6DwVO3Ss15IbVDRcGcaLdqXw8mCXVecCar5HUWgsceiU8yaDkULRoww5v+t6pQfi676XzKbBxWokdybBQcLlFvAECYYqpTtMlRwKE8UW6KVN6YcVxj8hnUvRyev2J09N6fCeHz76U3x5unssA9zJ2BtuC5S4kiOJ5PyIO2dPlyYQNCyTXcm1ynC4HPmGEI7iHFkRCKN0K14Ht0N7PSkozxA13qaV52pM1VPCOAD/TZNwl2tP8HWrPTFHga463FE+L7wiJQ05XcX24FBVnVtipr2nI5Qhqes6tSnyoUBVBY6IRNF0D50AWEYq1CG/ZuXN6uNz0rseK0ef3T0RNnjA2AwiEAGA3LtPpluEp9ePKOw+2WvnESjCwT4eOMXOa+dAmrJLeahCXgJ3vcjFEy8BbBTNahN3FJR5ZW2P7O803GDdl3r3qpdig/1sSe8YyokWZdT1IfQHOJaCNl8kVHhvWnY/T+pCNE6KB8+4=
 notifications:
   email:
     recipients:
-      - msroed@gmail.com
+    - msroed@gmail.com
     on_success: change
     on_failure: always
