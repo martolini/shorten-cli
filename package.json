@@ -1,0 +1,18 @@
+{
+  "name": "shorten-cli",
+  "version": "1.0.6",
+  "description": "CLI for short.msroed.io",
+  "main": "index.js",
+  "repository": "https://github.com/martolini/shorten-cli",
+  "author": "Martin Roed",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "colors": "^1.3.2",
+    "commander": "^2.18.0",
+    "opn": "^5.4.0"
+  },
+  "bin": {
+    "shorten": "./index.js"
+  }
+}
