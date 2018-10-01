@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - '9'
+deploy:
+  provider: npm
+  email: msroed@gmail.com
+  api_key:
+    secure: IuAjeqljPvz+4+/kaDYOS6dx3RrSqMVHCthrV+7j/n0gNKPAcbjiGhuYSK99zq/wIzwJlpDRxWxoJ316lpIabIp91S258x4xxhpLGzBryTTNY93NsWoFvcYRXpEpxdezJRxzJMT9a2rffalKrWqCGcObRVoDE6v+BV1vjIwFh009BqFKAJFnGCy2z16PZ2lz5tNTWk7rp42G3TkGIpcZfnFLbVLDJr0UPcy0i1UfvPpDMr24MnbvL4zUa2pKnbUImz2+1ZwWCTUVAcq01U7tH/BaH1EOOWlEIIQSsbwnjE7PBSxHCfo9IS5W+Ga5oo2omRftcgdW7jWlIrT9vftzQe1K17vikx+wiPTbtAv7er6Z8gotBZrneJKoTqKGW/IFnZ+eqVvi1Nl45kcbXtRNd8pHS6Dd41RkxlpfmZC6GpsOy6Q15EGXCIxGS1tw1hS8TrKPFoR4rE8txdqicZy4Os71E1o6TiRKjLS7+ZxhDnY+0Ar1O4Pw3SMYHQ/04r2AvNWkwR/Ae926611EO19JFOJoa1qnQ+BWhabIs28sQQfx7KMsp/fzeO2Jwqam6kPOdl0BSdtXYCzv6xd40rZUkwKJehAIy4okMPUBDd3L61aS2XG9LJSw8Hc/h09b3QM1zXGCfXfANhg2y6Uug5iaBAMWJJ6gmCNgfYBC9Gvf0JY=
+  on:
+    tags: true
+notifications:
+  email:
+    recipients:
+      - msroed@gmail.com
+    on_success: change
+    on_failure: always
