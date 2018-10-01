@@ -12,6 +12,9 @@
     "commander": "^2.18.0",
     "opn": "^5.4.0"
   },
+  "scripts": {
+    "test": "echo Huzzah!"
+  },
   "bin": {
     "shorten": "./index.js"
   }
