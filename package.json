@@ -1,6 +1,6 @@
 {
   "name": "shorten-cli",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "CLI for short.msroed.io",
   "main": "index.js",
   "repository": "https://github.com/martolini/shorten-cli",
