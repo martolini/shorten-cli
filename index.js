@@ -31,7 +31,7 @@ program
   .action(async (url, options) => {
     const { slug } = options;
     return axios
-      .post(`${BASE_URL}/v1/shorten`, {
+      .post(`${BASE_URL}/v1`, {
         url,
         slug,
       })
